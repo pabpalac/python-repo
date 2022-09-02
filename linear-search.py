@@ -1,4 +1,6 @@
-# linear-search.py: function to perform linear searching.
+from numpy.random import randint
+
+
 def linear_search(values, element):
     index = 0
     for currentElement in values:
@@ -9,10 +11,13 @@ def linear_search(values, element):
 
 
 def main():
-    print(linear_search([1, 4, 54, 3, 0, -1], 44))
-    print(linear_search([1, 4, 54, 3, 0, -1], 3))
-    print(linear_search([1, 4, 54, 3, 0, -1], 0))
-    print(linear_search([], 0))
+    array_list = randint(0, 50, 50)
+    result = linear_search(array_list, int(input("Ingresar número a la lista: \n")))
+    if result > 0:
+        print("Encontrado en la posición número " + str(result + 1))
+    else:
+        print("404 not found")
+    print(array_list)
 
 
 main()
