@@ -1,10 +1,10 @@
 # linear-search.py: function to perform linear searching.
-def linear_search(lista, x):
-    i = 0
-    for z in lista:
-        if z == x:
-            return i
-        i = i + 1
+def linear_search(values, element):
+    index = 0
+    for currentElement in values:
+        if currentElement == element:
+            return index
+        index = index + 1
     return -1
 
 
