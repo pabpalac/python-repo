@@ -8,13 +8,13 @@ def recur_fibo(n):
 
 
 def main():
-    n_terms = int(input("How many terms? "))
+    n_terms = int(input("¿Cuánros términos? "))
 
     # check if the number of terms is valid
     if n_terms <= 0:
-        print("Please enter a positive integer")
+        print("Por favor ingresa un número entero positivo.")
     else:
-        print("Fibonacci sequence:")
+        print("Seguencia de Fibonacci:")
         for i in range(n_terms):
             print(recur_fibo(i))
 
